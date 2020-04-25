@@ -171,7 +171,19 @@ Neighborhoods - Analysis Boundaries is not
 
 City is 
   San Francisco
-        </pre>
+        </pre><br/>
+
+        <h5>Python Filter Columns</h5>
+
+        <pre>
+import pandas as pd
+import csv
+
+f = pd.read_csv("C:\\Users\\cilla\\git\\homework4-phamiter253\\fire2020.csv")
+keep_col = ['CallNumber','CallType','CallDate','Battalion']
+new_f = f[keep_col]
+new_f.to_csv("C:\\Users\\cilla\\git\\homework4-phamiter253\\newFile.csv", index=False)
+        </pre><br/>
 
         <h5>JavaScript Hierarchical Wrangling</h5>
 
