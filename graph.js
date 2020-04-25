@@ -9,7 +9,7 @@ var data = [
 var types = new Set();
 
 
-d3.csv("fire2020.csv").then(function(csv){
+d3.csv("newFile.csv").then(function(csv){
   global_csv = csv;
   csv.forEach(function(d){
     types.add(d.CallType);
